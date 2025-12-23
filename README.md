@@ -1,1 +1,1 @@
-Let's Dtect Objects With TensorFlow.js and React.js
+Let's Detect Objects With TensorFlow.js and React.js
