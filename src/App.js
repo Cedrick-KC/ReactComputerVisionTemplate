@@ -78,7 +78,7 @@ function App() {
             className="canvas"
           />
         </header>
-      <Footer/>       
+      <Footer />       
       </div>
     </>
   );
