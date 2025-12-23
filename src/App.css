@@ -1,38 +1,59 @@
+/* Center the app and add background gradient */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header container */
+.App-header {
+  position: relative;
+  width: 640px;
+  height: 480px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 40px #00fff7, 0 0 80px #00f0ff55 inset;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Webcam video styling */
+.webcam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: brightness(1.2) contrast(1.1);
+  z-index: 1;
+  box-shadow: 0 0 20px #00fff7;
+}
+
+/* Canvas overlay styling */
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* GitHub Star button container */
+.github-star {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00fff7;
 }
