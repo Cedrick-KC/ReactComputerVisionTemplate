@@ -60,6 +60,7 @@ function App() {
   }, []);
 
   return (
+ <>   
     <iframe
   src="https://ghbtns.com/github-btn.html?user=Cedrick-KC&repo=ReactComputerVisionTemplate&type=star&count=true"
   frameborder="0"
@@ -103,7 +104,8 @@ function App() {
         />
       </header>
     </div>
-  );
+  </>
+);
 }
 
 export default App;
